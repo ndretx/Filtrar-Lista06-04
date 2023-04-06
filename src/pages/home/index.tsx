@@ -2,6 +2,8 @@ import { Container, Movie, MovieList } from "./components";
 import { useState, useEffect } from "react";
 import { API_KEY } from "../../config/api_key";
 import { Link } from "react-router-dom";
+import MovieTable from "./controller/filter-controller";
+import SearchBar from "./searchBar";
 
 
 export default function Home(){
@@ -19,7 +21,10 @@ export default function Home(){
     return (
         <Container>
             <h1>Movies</h1>
-            <MovieList>
+            <MovieTable/>
+            <SearchBar/>
+
+
                 {
                     movies.map(movie => {
                         return (
@@ -30,7 +35,7 @@ export default function Home(){
                         )
                     })
                 }
-            </MovieList>
+           
         </Container>
     );
 }
