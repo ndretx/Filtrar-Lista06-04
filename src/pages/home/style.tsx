@@ -1,4 +1,4 @@
-gimport styled from "styled-components";
+import styled from "styled-components";
 
 export const Container = styled.div`
     h1 {
@@ -23,7 +23,7 @@ export const Movie = styled.li`
     align-items: center;
 
     img {
-        width: 180px;
+        width: 150px;
         border-radius: 1rem;
         margin-bottom: 2rem;
     }
@@ -43,9 +43,12 @@ export const Movie = styled.li`
     }
 `
 
-export const Filter = styled.div`
-    display: grid;
-    height: 50px;
-    margin: 80px;
+
+export const SearchBar = styled.div`
+display: grid;
+height: 40px;
+margin: 40px;
+border: 2px solid white;
+
 
 `
